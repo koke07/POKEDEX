@@ -4,11 +4,27 @@ import { getPokemonDetailsApi } from '../api/pokemon';
 import Header from '../components/pokemon/Header';
 import Type from '../components/pokemon/Type';
 import Stats from '../components/pokemon/stats';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 export default function Pokemon (props) {
   const {navigation,route:{params}} =props;
   const [pokemon, setPokemon] = useState(null)
   console.log(params.id)
+
+  useEffect(() => {
+    navigation.setOptions({
+      headerRight: () => null,
+      headerLeft: () => (
+        <Icon
+          name="arrow-left"
+          color="#fff"
+          size={20}
+          style={{ marginLeft: 20 }}
+          onPress={navigation.goBack}
+        />
+      ),
+    });
+  }, [navigation, params]);
 
   // funcion anonima autoejecutable 
   useEffect(() => {
