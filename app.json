@@ -28,6 +28,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "265da216-2528-4039-95d6-bc04c138ed6e"
+      }
+    },
+    "owner": "koke07"
   }
 }
