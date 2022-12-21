@@ -11,3 +11,7 @@ Init
 #yarn start
 #i
 #expo + react native 
+
+
+
+<img width="333" alt="Captura de pantalla 2022-12-21 a la(s) 4 02 54 p m" src="https://user-images.githubusercontent.com/31372667/209002241-dc585b9e-2bdf-4107-8c24-b5458957e353.png">
